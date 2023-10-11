@@ -1,8 +1,8 @@
-#include "shell.h"
+#include "custom_shell.h"
 
 int num_len(int num);
 char *_itoa(int num);
-int create_error(char **args, int err);
+int create_errors(char **args, int err);
 
 /**
  * num_len - Counts the digit length of a number.
@@ -79,7 +79,7 @@ char *_itoa(int num)
  *
  * Return: The error value.
  */
-int create_error(char **args, int err)
+int create_errors(char **args, int err)
 {
 	char *error;
 
